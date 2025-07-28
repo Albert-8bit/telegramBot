@@ -27,7 +27,7 @@ FETCH_INTERVAL = 600  # every 10 minutes
 
 # --- Fetch price from Polymarket ---
 def get_price():
-    url = "https://polymarket.com/event/us-x-iran-nuclear-deal-in-2025"
+    url = "https://polymarket.com/event/ukraine-hits-moscow-by-july-31/"
     response = requests.get(url)
     if response.status_code == 200:
         match = re.search(r'"outcomePrices":\s*\[\s*"([^"]+)"', response.text)
